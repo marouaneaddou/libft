@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maddou <maddou@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: maddou <maddou@student.1337.ma >           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 18:46:10 by maddou            #+#    #+#             */
-/*   Updated: 2022/10/15 20:12:45 by maddou           ###   ########.fr       */
+/*   Updated: 2025/04/01 14:39:39 by maddou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
+# include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -23,7 +24,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	{
 		if (d[i] == (unsigned char)c)
 		{
-			p = (void *)&s[i];
+			p = (void *)&d[i];
 			return (p);
 		}
 		i++;
