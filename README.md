@@ -99,12 +99,12 @@ Once you've cloned libft into your project, follow these steps to integrate it.
 
     You can create `main.c` with the following content:
     ```c
-    #include "libft.h"
+    #include "libft/libft.h"
     #include <stdio.h>
 
     int main() {
         char *str = "Hello, Libft!";
-        printf("Length of string: %zu\n", ft_strlen(str));
+        printf("Length of string: %ld\n", ft_strlen(str));
     }
     ```
     **Step 2: Compile Your Project**
