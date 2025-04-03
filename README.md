@@ -72,18 +72,18 @@ Once you've cloned libft into your project, follow these steps to integrate it.
     all: $(NAME)
 
     $(NAME): $(OBJ) $(LIBFT)
-        $(CC) $(CFLAGS) $(OBJ) $(LIBFT) -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJ) $(LIBFT) -o $(NAME)
     
     $(LIBFT):
-	    make -C $(LIBFT_DIR)
+	make -C $(LIBFT_DIR)
     
     clean:
-	    rm -f $(OBJ)
-	    make -C $(LIBFT_DIR) clean 
+	rm -f $(OBJ)
+	make -C $(LIBFT_DIR) clean 
 
     fclean: clean
-    	rm -f $(NAME)
-    	make -C $(LIBFT_DIR) fclean 
+	rm -f $(NAME)
+	make -C $(LIBFT_DIR) fclean 
 
    re: fclean all
 
